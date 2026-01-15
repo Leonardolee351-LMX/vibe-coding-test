@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Details - Leonardo Li</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand"><a href="index.html">Leonardo Li</a></div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="portfolio.html">Projects</a></li>
+                <li><a href="#" onclick="openResumeModal(); return false;">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Project Detail Section -->
+    <section class="project-detail-section" id="projectDetail">
+        <div class="container">
+            <!-- Back Link -->
+            <a href="portfolio.html" class="back-link">← Back to Projects</a>
+
+            <!-- Project Header -->
+            <div class="project-header">
+                <div class="project-badge" id="projectBadge"></div>
+                <h1 id="projectTitle"></h1>
+                <p id="projectSubtitle"></p>
+            </div>
+
+            <!-- Project Hero Image -->
+            <div class="project-hero">
+                <svg id="projectHeroImage" viewBox="0 0 1200 400" xmlns="http://www.w3.org/2000/svg">
+                    <!-- Will be populated by JavaScript -->
+                </svg>
+            </div>
+
+            <!-- Project Content -->
+            <div class="project-content">
+                <!-- Overview -->
+                <div class="content-section">
+                    <h2>Overview</h2>
+                    <p id="projectOverview"></p>
+                </div>
+
+                <!-- Challenge -->
+                <div class="content-section">
+                    <h2>The Challenge</h2>
+                    <p id="projectChallenge"></p>
+                </div>
+
+                <!-- Solution -->
+                <div class="content-section">
+                    <h2>Solution & Approach</h2>
+                    <p id="projectSolution"></p>
+                </div>
+
+                <!-- Key Achievements -->
+                <div class="content-section">
+                    <h2>Key Achievements</h2>
+                    <ul id="projectAchievements"></ul>
+                </div>
+
+                <!-- Tools & Technologies -->
+                <div class="content-section">
+                    <h2>Tools & Technologies</h2>
+                    <div class="tools-list" id="projectTools"></div>
+                </div>
+
+                <!-- Timeline -->
+                <div class="content-section">
+                    <h2>Project Timeline</h2>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <span class="timeline-date">Research</span>
+                            <span class="timeline-duration">4 weeks</span>
+                        </div>
+                        <div class="timeline-item">
+                            <span class="timeline-date">Design</span>
+                            <span class="timeline-duration">6 weeks</span>
+                        </div>
+                        <div class="timeline-item">
+                            <span class="timeline-date">Testing</span>
+                            <span class="timeline-duration">3 weeks</span>
+                        </div>
+                        <div class="timeline-item">
+                            <span class="timeline-date">Iteration</span>
+                            <span class="timeline-duration">2 weeks</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Results -->
+                <div class="content-section">
+                    <h2>Results & Impact</h2>
+                    <p id="projectResults"></p>
+                </div>
+            </div>
+
+            <!-- Related Projects -->
+            <div class="related-projects">
+                <h2>More Projects</h2>
+                <div class="related-grid" id="relatedProjects"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Leonardo Li. All rights reserved.</p>
+            <div class="social-links">
+                <a href="#" class="social-link">Twitter</a>
+                <a href="#" class="social-link">LinkedIn</a>
+                <a href="#" class="social-link">GitHub</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Resume Modal -->
+    <div id="resumeModal" class="modal">
+        <div class="modal-content resume-modal">
+            <span class="close" onclick="closeResumeModal()">&times;</span>
+            <div class="resume-container">
+                <div class="resume-header">
+                    <h1>Leonardo Li</h1>
+                    <p class="resume-title">Interaction Designer & UX Researcher</p>
+                    <div class="resume-contact-info">
+                        <span class="contact-item">📧 leonardo.li@email.com</span>
+                        <span class="contact-item">📱 +1 (555) 123-4567</span>
+                        <span class="contact-item">💬 WhatsApp: +1 (555) 123-4567</span>
+                        <span class="contact-item">📍 San Francisco, CA 94105</span>
+                        <span class="contact-item">🔗 linkedin.com/in/leonardoli</span>
+                    </div>
+                </div>
+
+                <div class="resume-section">
+                    <h2>Professional Summary</h2>
+                    <p>User-centered designer and researcher with 5+ years of experience in interaction design, UX research, and product development. Passionate about creating accessible, intuitive interfaces that solve real human problems.</p>
+                </div>
+
+                <div class="resume-section">
+                    <h2>Experience</h2>
+                    <div class="experience-item">
+                        <div class="experience-header">
+                            <h3>Senior Interaction Designer</h3>
+                            <span class="company">TechInnovate Studio</span>
+                            <span class="date">2022 - Present</span>
+                        </div>
+                        <ul>
+                            <li>Led design of 5+ major digital products, improving user satisfaction by 40%</li>
+                            <li>Conducted user research with 200+ participants across diverse backgrounds</li>
+                            <li>Implemented accessibility standards resulting in WCAG 2.1 AA compliance</li>
+                        </ul>
+                    </div>
+
+                    <div class="experience-item">
+                        <div class="experience-header">
+                            <h3>UX Researcher</h3>
+                            <span class="company">Creative Design Co.</span>
+                            <span class="date">2019 - 2022</span>
+                        </div>
+                        <ul>
+                            <li>Designed and executed qualitative and quantitative research studies</li>
+                            <li>Collaborated with cross-functional teams on product strategy</li>
+                            <li>Presented findings to stakeholders and C-level executives</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="resume-section">
+                    <h2>Skills</h2>
+                    <div class="skills-grid">
+                        <div class="skill-category">
+                            <h4>Design Tools</h4>
+                            <p>Figma, Adobe XD, Sketch, Protopie</p>
+                        </div>
+                        <div class="skill-category">
+                            <h4>Research Methods</h4>
+                            <p>User interviews, Usability testing, A/B testing, Eye tracking</p>
+                        </div>
+                        <div class="skill-category">
+                            <h4>Technical Skills</h4>
+                            <p>HTML, CSS, JavaScript, User testing platforms</p>
+                        </div>
+                        <div class="skill-category">
+                            <h4>Core Competencies</h4>
+                            <p>UX Strategy, Accessibility, Human-Centered Design, Research</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="resume-section">
+                    <h2>Education</h2>
+                    <div class="education-item">
+                        <h3>Master of Science in Human-Computer Interaction</h3>
+                        <p class="company">Stanford University</p>
+                        <span class="date">2017 - 2019</span>
+                    </div>
+                    <div class="education-item">
+                        <h3>Bachelor of Arts in Design & Psychology</h3>
+                        <p class="company">University of California, Berkeley</p>
+                        <span class="date">2013 - 2017</span>
+                    </div>
+                </div>
+
+                <div class="resume-footer">
+                    <button class="btn btn-primary" onclick="downloadResume()">Download PDF</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+    <script src="project-detail.js"></script>
+</body>
+</html>

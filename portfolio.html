@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Leonardo Li - Interaction Designer & UX Researcher</title>
+    <title>Portfolio - Leonardo Li</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -13,53 +13,26 @@
     <!-- Navigation -->
     <nav class="navbar">
         <div class="container">
-            <div class="nav-brand">Leonardo Li</div>
+            <div class="nav-brand"><a href="index.html">Leonardo Li</a></div>
             <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="portfolio.html">Projects</a></li>
                 <li><a href="#" onclick="openResumeModal(); return false;">Contact</a></li>
             </ul>
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="container">
-            <div class="hero-content">
-                <div class="hero-text">
-                    <h1>Interaction Designer & UX Researcher</h1>
-                    <p class="hero-subtitle">Crafting human-centered digital experiences</p>
-                    <p class="hero-description">I create intuitive, accessible, and meaningful user experiences through research-driven design. Focused on understanding user needs and translating them into elegant digital solutions.</p>
-                    <div class="hero-cta">
-                        <a href="portfolio.html" class="btn btn-primary">View My Work</a>
-                        <button class="btn btn-secondary" onclick="openResumeModal()">Get in Touch</button>
-                    </div>
-                </div>
-                <div class="hero-image">
-                    <div class="image-placeholder">
-                        <svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
-                            <rect width="400" height="400" fill="#F3F4F6"/>
-                            <circle cx="200" cy="150" r="80" fill="#5B4DFF" opacity="0.1"/>
-                            <rect x="100" y="250" width="200" height="120" fill="#5B4DFF" opacity="0.05"/>
-                            <text x="200" y="360" font-family="Inter" font-size="16" text-anchor="middle" fill="#6B7280">Portrait Image</text>
-                        </svg>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section id="projects" class="projects">
+    <!-- Portfolio Section -->
+    <section class="portfolio-section">
         <div class="container">
             <div class="section-header">
-                <h2>Featured Projects</h2>
-                <p>A selection of recent work exploring innovation and creativity</p>
+                <h1>My Work</h1>
+                <p>A comprehensive collection of my design and research projects</p>
             </div>
             
-            <div class="projects-grid">
-                <!-- Project 1: Wearables -->
-                <div class="project-card">
+            <div class="portfolio-grid">
+                <!-- Project 1: Smart Textile Interface -->
+                <div class="portfolio-card">
                     <div class="card-image">
                         <svg viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg">
                             <rect width="300" height="200" fill="#F0E5FF"/>
@@ -75,12 +48,12 @@
                             <span class="tag">Hardware</span>
                             <span class="tag">IoT</span>
                         </div>
-                        <a href="portfolio.html" class="view-project">View Project →</a>
+                        <a href="project-detail.html?id=1" class="view-project">View Project →</a>
                     </div>
                 </div>
 
-                <!-- Project 2: Accessibility -->
-                <div class="project-card">
+                <!-- Project 2: Universal Design Platform -->
+                <div class="portfolio-card">
                     <div class="card-image">
                         <svg viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg">
                             <rect width="300" height="200" fill="#E8F5E9"/>
@@ -96,12 +69,12 @@
                             <span class="tag">Web</span>
                             <span class="tag">A11y</span>
                         </div>
-                        <a href="portfolio.html" class="view-project">View Project →</a>
+                        <a href="project-detail.html?id=2" class="view-project">View Project →</a>
                     </div>
                 </div>
 
-                <!-- Project 3: AR/VR -->
-                <div class="project-card">
+                <!-- Project 3: Immersive Data Visualization -->
+                <div class="portfolio-card">
                     <div class="card-image">
                         <svg viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg">
                             <rect width="300" height="200" fill="#FCE4EC"/>
@@ -117,20 +90,74 @@
                             <span class="tag">XR</span>
                             <span class="tag">3D</span>
                         </div>
-                        <a href="portfolio.html" class="view-project">View Project →</a>
+                        <a href="project-detail.html?id=3" class="view-project">View Project →</a>
                     </div>
                 </div>
-            </div>
-        </div>
-    </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <div class="contact-content">
-                <h2>Let's Create Something Amazing</h2>
-                <p>I'm always interested in hearing about new projects and opportunities.</p>
-                <button class="btn btn-primary" onclick="openResumeModal()">Email Me</button>
+                <!-- Project 4: Voice-Driven Interface -->
+                <div class="portfolio-card">
+                    <div class="card-image">
+                        <svg viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="300" height="200" fill="#FFF3E0"/>
+                            <circle cx="150" cy="100" r="40" fill="#5B4DFF" opacity="0.1"/>
+                            <path d="M 150 70 Q 160 100 150 130 Q 140 100 150 70" fill="#5B4DFF" opacity="0.2"/>
+                        </svg>
+                        <span class="badge badge-ai">AI & Voice</span>
+                    </div>
+                    <div class="card-content">
+                        <h3>Voice-Driven Interface</h3>
+                        <p>Natural language voice interface designed for accessibility. Uses AI to understand context and intent, providing seamless voice-based interaction.</p>
+                        <div class="card-meta">
+                            <span class="tag">AI</span>
+                            <span class="tag">NLP</span>
+                        </div>
+                        <a href="project-detail.html?id=4" class="view-project">View Project →</a>
+                    </div>
+                </div>
+
+                <!-- Project 5: Health Tracking Dashboard -->
+                <div class="portfolio-card">
+                    <div class="card-image">
+                        <svg viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="300" height="200" fill="#E0F2F1"/>
+                            <rect x="60" y="60" width="60" height="80" fill="#5B4DFF" opacity="0.2"/>
+                            <rect x="130" y="40" width="60" height="100" fill="#5B4DFF" opacity="0.25"/>
+                            <rect x="200" y="80" width="60" height="60" fill="#5B4DFF" opacity="0.2"/>
+                        </svg>
+                        <span class="badge badge-product">Product Design</span>
+                    </div>
+                    <div class="card-content">
+                        <h3>Health Tracking Dashboard</h3>
+                        <p>User-centered design for a comprehensive health monitoring platform. Simplifies complex health data into intuitive visualizations for everyday users.</p>
+                        <div class="card-meta">
+                            <span class="tag">Product</span>
+                            <span class="tag">Data Viz</span>
+                        </div>
+                        <a href="project-detail.html?id=5" class="view-project">View Project →</a>
+                    </div>
+                </div>
+
+                <!-- Project 6: Gesture Recognition System -->
+                <div class="portfolio-card">
+                    <div class="card-image">
+                        <svg viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="300" height="200" fill="#F3E5F5"/>
+                            <circle cx="100" cy="100" r="25" fill="#5B4DFF" opacity="0.15"/>
+                            <circle cx="150" cy="100" r="30" fill="#5B4DFF" opacity="0.2"/>
+                            <circle cx="200" cy="100" r="25" fill="#5B4DFF" opacity="0.15"/>
+                        </svg>
+                        <span class="badge badge-interaction">Interaction</span>
+                    </div>
+                    <div class="card-content">
+                        <h3>Gesture Recognition System</h3>
+                        <p>Computer vision-based gesture recognition enabling hands-free interaction. Researched and designed for intuitive, natural human-computer communication.</p>
+                        <div class="card-meta">
+                            <span class="tag">CV</span>
+                            <span class="tag">UX Research</span>
+                        </div>
+                        <a href="project-detail.html?id=6" class="view-project">View Project →</a>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
